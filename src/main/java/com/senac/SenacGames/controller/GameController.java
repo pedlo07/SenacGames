@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+
 @RestController
 @RequestMapping("/games")
 public class GameController {
@@ -21,6 +22,7 @@ public class GameController {
     @GetMapping
     public List<Game> getTodosOsJogos(){
         return gameRepository.findAll();
+
 
     }
 @PostMapping
@@ -48,4 +50,3 @@ public class GameController {
     }
 
 }
-
